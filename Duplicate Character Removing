@@ -1,0 +1,48 @@
+# String comparing and remove duplicates before printing.
+
+#STEP - 1
+
+InputString = 'Raajeeshh'
+
+def remove_duplicate(stringresult):
+    name = ""
+    try:
+        for stg in InputString:
+            if stg not in name:
+                name = name+stg
+        return name
+    except Exception as err:        
+        print(err)
+    finally:
+        print('Success')
+
+remove_duplicate(InputString)
+
+
+#STEP - 2
+
+def remove_duplicate(stringresult):
+    name=[]
+    try:
+        for stg1 in InputString:
+            if stg1 not in name:
+                name.append(stg1)
+        name=''.join(name)
+        return name
+    except Exception as err:
+        print(err)
+    finally:
+        print('Success')
+
+remove_duplicate(InputString)
+
+
+#STEP - 3
+
+def remove_duplicate(stringresult):
+
+    stg3 = set(InputString)
+    name =''.join(stg3)
+    return name
+
+remove_duplicate(InputString)
