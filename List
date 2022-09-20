@@ -3,6 +3,6 @@
 list1 = [2, 3, 9, 4, 7]
 list2 = [1, 4, 7, 2, 8]
 
-for i in list1:
-    if i in list2:
-        print(i)
+for lists in list1:
+    if lists in list2:
+        print(lists)
