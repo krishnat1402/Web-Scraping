@@ -1,0 +1,7 @@
+test = {1:2, 3:4, 5:6, 7:8, 9:10, 11:12, 13:20, 25:2}
+
+for key, value in test.items(): #(Iterating the variable(test) with items(key &value))
+    key = key # declaring the variable for keys
+    value = value # declaring the variable for values
+    kv = key * value # Multiply the variable (keys and values)
+    print(key, '*', value, '=', kv) # print the result
