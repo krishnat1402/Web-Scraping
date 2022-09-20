@@ -1,0 +1,7 @@
+# How to iterate each item in the list and print the type of that data.
+
+list = [1532, 9.2, True, 'w3resource', (0, -12), [15, 12], {"class":'IV', "sec":'IN'}]
+
+for lists in list:
+    typeoflist = type(lists)
+    print(lists, typeoflist)
