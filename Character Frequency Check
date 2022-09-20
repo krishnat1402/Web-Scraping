@@ -1,0 +1,16 @@
+InputString = 'google.com'
+
+def check_freq(stringresult):
+    freq = {}
+    try:
+        for check in InputString:
+            if check in freq:
+                freq[check.lower()] = freq[check.lower()] + 1
+            else:
+                freq[check.lower()] = 1
+        return freq
+    except Exception as err:        
+        print(err)
+    finally:
+        print('success')
+check_freq(InputString)
